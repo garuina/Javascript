@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
         $(function(){
+
             $('input[type=submit]').click(function(e){
                 e.preventDefault();
                 // 입력 데이터 가져오기
@@ -36,7 +37,7 @@
                     type:'GET',
                     data: jsonData,
                     dataType:'json',
-                    sucess:function(data){
+                    success:function(data){
                         alert('데이터 전송 성공!');
                     }
                 });
